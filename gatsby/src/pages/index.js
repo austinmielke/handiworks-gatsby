@@ -1,9 +1,9 @@
-import * as React from "react"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+import * as React from 'react'
+import { Link } from 'gatsby'
+import { StaticImage } from 'gatsby-plugin-image'
 
-import Layout from "../components/layout"
-import Seo from "../components/seo"
+import Layout from '../components/layout'
+import Seo from '../components/seo'
 
 const IndexPage = () => (
   <Layout>
@@ -17,7 +17,7 @@ const IndexPage = () => (
             src="../images/gatsby-astronaut.png"
             width={300}
             quality={95}
-            formats={["AUTO", "WEBP"]}
+            formats={['AUTO', 'WEBP']}
             alt="A Gatsby astronaut"
             className="img-fluid"
           />

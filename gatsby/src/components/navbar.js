@@ -1,9 +1,9 @@
-import * as React from "react"
-import PropTypes from "prop-types"
-import { Link } from "gatsby"
+import * as React from 'react'
+import PropTypes from 'prop-types'
+import { Link } from 'gatsby'
 
 const isActive = ({ isCurrent }) => {
-  return isCurrent ? { className: "nav-link active" } : {className: "nav-link"}
+  return isCurrent ? { className: 'nav-link active' } : { className: 'nav-link' }
 }
 
 const ExactNavLink = props => (
@@ -44,11 +44,11 @@ const Navbar = ({ siteTitle }) => {
 }
 
 Navbar.propTypes = {
-  siteTitle: PropTypes.string,
+  siteTitle: PropTypes.string
 }
 
 Navbar.defaultProps = {
-  siteTitle: ``,
+  siteTitle: ''
 }
 
 export default Navbar

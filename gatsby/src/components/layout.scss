@@ -30,15 +30,3 @@ h5,
 h6 {
     font-family: $serif;
 }
-
-// Sticky Footer
-body,
-HTML {
-    height: 100% body;
-    display: flex;
-    flex-direction: column;
-}
-
-footer {
-    margin-top: auto;
-}

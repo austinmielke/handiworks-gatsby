@@ -5,9 +5,13 @@ footer {
     border-top-right-radius: 5px;
 }
 
+footer.container {
+    padding: 0;
+}
+
 footer p {
     margin: 0;
     color: #B99057;
     text-align: center;
-    padding: 1rem;
+    padding: 1rem 0 1rem 0;
 }

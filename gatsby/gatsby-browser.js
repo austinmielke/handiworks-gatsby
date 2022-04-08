@@ -1,2 +1,7 @@
+import '@fontsource/source-serif-pro/400.css'
+import '@fontsource/source-serif-pro/700.css'
+import '@fontsource/source-sans-pro/400.css'
+import '@fontsource/source-sans-pro/400-italic.css'
+import '@fontsource/source-sans-pro/700.css'
 import 'bootstrap/dist/js/bootstrap.min.js'
 import '@popperjs/core/dist/umd/popper.min.js'

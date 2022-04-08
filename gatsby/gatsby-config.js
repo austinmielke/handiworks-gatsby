@@ -26,6 +26,12 @@ module.exports = {
       }
     },
     {
+      resolve: 'gatsby-plugin-purgecss',
+      options: {
+        printRejected: true // Print removed selectors and processed file names
+      }
+    },
+    {
       resolve: 'gatsby-plugin-manifest',
       options: {
         name: 'gatsby-starter-bootstrap-5',

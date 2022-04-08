@@ -18,11 +18,11 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
+    <div className="min-vh-100 d-flex flex-column justify-content-between">
       <Navbar siteTitle={data.site.siteMetadata?.title || 'Title'} />
       <main>{children}</main>
       <Footer />
-    </>
+    </div>
   )
 }
 

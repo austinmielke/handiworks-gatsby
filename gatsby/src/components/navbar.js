@@ -15,7 +15,7 @@ const ExactNavLink = props => (
 
 const Navbar = ({ siteTitle }) => {
   return (
-    <header className="container p-0">
+    <header className="container p-0 mb-4">
         <div className="row banner my-3">
             <div className="col-lg-12">
             <img className="img-fluid text-center" src={bannerImage} alt="Handicrafts Ltd." />

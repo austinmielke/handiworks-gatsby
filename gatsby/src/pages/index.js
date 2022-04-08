@@ -1,15 +1,10 @@
 import * as React from 'react'
-
 import Layout from '../components/layout'
 import Seo from '../components/seo'
 
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
-    <section className="container">
-                <p>Carousel</p>
-    </section>
-
     <section className="container mb-4">
         <div className="row justify-content-center">
             <div className="col-md-10">

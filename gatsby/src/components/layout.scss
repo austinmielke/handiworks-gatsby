@@ -1,6 +1,44 @@
 //Here you can customize bootstrap
-$primary: #663399;
 @import "~bootstrap/scss/bootstrap";
 
+//Colors
+$red: #CF5260;
+$drkBrown: #110B04;
+$brown: #4D3216;
+$gold: #B99057;
+$white: #FFF;
 
+//Font Families
+$serif: 'Source Serif Pro',
+serif;
+$sansSerif: 'Source Sans Pro',
+sans-serif;
 
+// Base Styles
+body {
+    background: $white;
+    font-family: $sansSerif;
+    font-size: 16px;
+    color: $drkBrown;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $serif;
+}
+
+// Sticky Footer
+body,
+HTML {
+    height: 100% body;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: auto;
+}

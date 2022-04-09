@@ -1,0 +1,30 @@
+#contact {
+    margin-bottom: 2rem;
+}
+
+#contact ul {
+    list-style: none;
+    margin: 0;
+    padding: 1rem;
+    font-family: 'Source Serif Pro', serif;
+    font-size: 1.25rem;
+    background: #4D3216;
+    border-radius: 5px;
+}
+
+#contact ul a {
+    color: #FFF;
+    transition: all ease-in-out 0.75s;
+}
+
+#contact ul a:hover {
+    color: #B99057;
+    text-decoration: none;
+}
+
+#contact ul a svg {
+    display: inline-block;
+    text-align: center;
+    width: 2rem;
+    color: #B99057;
+}

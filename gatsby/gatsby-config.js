@@ -1,3 +1,7 @@
+require('dotenv').config({
+  path: '.env'
+})
+
 module.exports = {
   siteMetadata: {
     title: 'Handiworks Ltd.',
@@ -23,6 +27,14 @@ module.exports = {
         sassOptions: {
           precision: 6
         }
+      }
+    },
+    {
+      resolve: 'gatsby-source-sanity',
+      options: {
+        projectId: process.env.SANITY_PROJECT_ID,
+        dataset: 'production',
+        token: process.env.SANITY_TOKEN
       }
     },
     {

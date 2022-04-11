@@ -1,0 +1,33 @@
+#patterns-list .card {
+    margin-bottom: 2em;
+    border: none;
+    padding: 0.5em;
+}
+
+#patterns-list .card .image {
+    margin: 0 auto 0.5em;
+    position: relative;
+    overflow: hidden;
+    height: 200px;
+    width: 200px;
+    padding-bottom: 100%;
+}
+
+#patterns-list .card .image img {
+    position: absolute;
+    max-width: 100%;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+#patterns-list .card .card-block .btn-primary {
+    background: #B99057;
+    border: none;
+    transition: all ease-in-out 0.3s;
+}
+
+#patterns-list .card .card-block .btn-primary:hover {
+    background: #4D3216;
+}

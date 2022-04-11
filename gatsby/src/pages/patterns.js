@@ -1,37 +1,50 @@
+/* eslint-disable react/prop-types */
 import * as React from 'react'
 import Layout from '../components/layout'
 import Seo from '../components/seo'
+import { graphql } from 'gatsby'
 import '../components/patterns.scss'
+import PatternCard from '../components/patterncard'
 
-const PatternsList = () => (
-  <Layout>
-    <Seo title="Home" />
-    <section className="container" id="patterns-list">
+const PatternsList = ({ data }) => {
+  const patterns = data.patterns.edges
+  return (
+        <Layout>
+            <Seo title="Patterns" />
+            <section className="container" id="patterns-list">
+                <div className="row">
+                    {patterns.map((pattern) => <PatternCard pattern={pattern.node} key={pattern.node._id} />)}
+                </div>
+            </section>
+        </Layout>
+  )
+}
 
-            <div className="row">
-
-                {/* Start of card loop */}
-
-                    <div className="col-sm-6 col-md-4 col-lg-3">
-                        <div className="card text-center">
-                            <div className="image">
-                                <a href="/patterns/">
-                                    <img src="" alt=" by Judy M. Ellis, Handiwords Ltd LLC" />
-                                </a>
-                            </div>
-                            <div className="card-block">
-                                <h4 className="card-title">Pattern Name</h4>
-                                <a href="" className="btn btn-primary">More Info</a>
-                            </div>
-                        </div>
-                    </div>
-
-                {/* End of card loop */}
-
-            </div>
-
-        </section>
-  </Layout>
-)
+export const query = graphql`
+    query {
+        patterns: allSanityPattern {
+            edges {
+                node {
+                    description
+                    name
+                    publishDate
+                    slug {
+                        current
+                    }
+                    image {
+                        asset {
+                            gatsbyImageData(
+                                height: 200
+                                placeholder: BLURRED
+                                formats: [AUTO, WEBP, AVIF]
+                            )
+                        }
+                    }
+                    _id
+                }
+            }
+        }
+    }
+`
 
 export default PatternsList

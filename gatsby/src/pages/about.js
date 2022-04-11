@@ -94,7 +94,7 @@ const AboutPage = ({ data }) => {
 }
 
 export const query = graphql`
-query MyQuery {
+query {
   file(relativePath: {eq: "portrait.jpg"}) {
     childImageSharp {
       gatsbyImageData(

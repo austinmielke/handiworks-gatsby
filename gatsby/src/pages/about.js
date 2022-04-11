@@ -14,8 +14,8 @@ const AboutPage = ({ data }) => {
         <Seo title="About" />
         <section className="container" id="about">
             <div className="row">
-                <div className="col">
-                    <GatsbyImage className="image-fluid" image={portrait} alt="Photo of Judy M. Ellis" />
+                <div className="col text-center">
+                    <GatsbyImage className="image-fluid mb-4 mx-auto" image={portrait} alt="Photo of Judy M. Ellis" />
                 </div>
                 <div className="col-sm-8">
 

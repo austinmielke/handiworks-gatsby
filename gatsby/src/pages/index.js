@@ -1,9 +1,8 @@
 /* eslint-disable react/prop-types */
 import * as React from 'react'
-import 'bootstrap/js/dist/carousel.js'
 import Layout from '../components/layout'
 import Seo from '../components/seo'
-import Carousel from '../components/carousel'
+import IndexCarousel from '../components/carousel'
 import { graphql } from 'gatsby'
 
 const IndexPage = ({ data }) => {
@@ -11,7 +10,7 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <Seo title="Home" />
-      <Carousel carouselItems={carouselItems} />
+      <IndexCarousel carouselItems={carouselItems} />
       <section className="container mb-4">
           <div className="row justify-content-center">
               <div className="col-md-10">
@@ -34,7 +33,7 @@ export const query = graphql`
         image {
           asset {
             gatsbyImageData(
-              height: 350
+              width: 1100
               placeholder: BLURRED
               formats: [AUTO, WEBP, AVIF]
             )

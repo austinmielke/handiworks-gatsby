@@ -14,29 +14,30 @@ const ContactPage = () => (
 
             <div className="col-sm-12 col-md-8">
                 <h1 className="text-center">Contact</h1>
-                <form className="mb-4" action="" method="POST">
+                <form name="Contact Form" className="mb-4" method="post" data-netlify="true" action="/thank-you" netlify-honeypot="bot-field">
+                    <input type="hidden" name="form-name" value="Contact Form" />
 
-                    <div className="form-group">
+                    <div className="form-group mb-2">
                         <label htmlFor="name">Name:</label>
                         <input type="text" name="name" id="name" value="" className="form-control" />
                     </div>
 
-                    <div className="form-group">
+                    <div className="form-group mb-2">
                         <label htmlFor="email">Email Address:</label>
                         <input type="text" name="email" id="email" value="" className="form-control" />
                     </div>
 
-                    <div className="form-group">
+                    <div className="form-group mb-2">
                         <label htmlFor="subject">Subject:</label>
                         <input type="text" name="subject" id="subject" value="" className="form-control" />
                     </div>
 
-                    <div className="form-group">
+                    <div className="form-group mb-2">
                         <label htmlFor="body">Message:</label>
                         <textarea name="bodyMessage" id="bodyMessage" rows="5" className="form-control" />
                     </div>
 
-                    <button className="btn btn-success">Send Message</button>
+                    <button className="btn btn-success mt-2">Send Message</button>
 
                 </form>
             </div>

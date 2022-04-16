@@ -12,6 +12,7 @@ const PatternsList = ({ data }) => {
         <Layout>
             <Seo title="Patterns" />
             <section className="container" id="patterns-list">
+                <h1 className='text-center'>Patterns</h1>
                 <div className="row">
                     {patterns.map((pattern) => <PatternCard pattern={pattern.node} key={pattern.node._id} />)}
                 </div>

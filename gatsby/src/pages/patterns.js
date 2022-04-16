@@ -23,7 +23,7 @@ const PatternsList = ({ data }) => {
 
 export const query = graphql`
     query {
-        patterns: allSanityPattern {
+        patterns: allSanityPattern(sort: {fields: publishDate, order: DESC}) {
             edges {
                 node {
                     name
@@ -33,11 +33,7 @@ export const query = graphql`
                     }
                     image {
                         asset {
-                            gatsbyImageData(
-                                height: 200
-                                placeholder: BLURRED
-                                formats: [AUTO, WEBP, AVIF]
-                            )
+                            gatsbyImageData(height: 200, placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
                         }
                     }
                     _id

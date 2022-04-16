@@ -37,10 +37,11 @@ const PatternPage = ({ data }) => {
                     <p>{pattern.description}</p>
 
                     <div className="d-flex justify-content-center">
-                        <a href={pattern.url} target="_blank" className="btn btn-primary m-1" rel="noreferrer">
-                            <RavelryIcon /> Ravelry
-                        </a>
-
+                        {pattern.url &&
+                            <a href={pattern.url} target="_blank" className="btn btn-primary m-1" rel="noreferrer">
+                                <RavelryIcon /> Ravelry
+                            </a>
+                        }
                         <Link to="/patterns/" className="btn btn-primary m-1">Return to Patterns</Link>
                     </div>
 

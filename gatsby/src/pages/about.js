@@ -1,10 +1,9 @@
 /* eslint-disable react/prop-types */
 import * as React from 'react'
-// import { Link } from 'gatsby'
+import { Link, graphql } from 'gatsby'
 import Layout from '../components/layout'
 import Seo from '../components/seo'
 import '../components/about.scss'
-import { graphql } from 'gatsby'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 
 const AboutPage = ({ data }) => {
@@ -24,7 +23,7 @@ const AboutPage = ({ data }) => {
 
                     <p>Judy Ellis is a lifelong knitter and crocheter. She was literally taught at the knee of both of her grandmothers who never used written patterns.</p>
 
-                    <h3 className="text-center">Services Offered:</h3>
+                    <h3 className="text-center">Services Offered</h3>
 
                     <div className="container">
                         <div className="row justify-content-around">
@@ -32,7 +31,7 @@ const AboutPage = ({ data }) => {
                             <div className="card col-lg-5">
                                 <div className="card-body">
                                     <h4 className="text-center card-title">
-                                        <a href="contact/design" className="card-link text-decoration-none">Knit or Crochet Design</a>
+                                        <Link to="/contact" className="card-link text-decoration-none" state={{ subject: 'design' }}>Knit or Crochet Design</Link>
                                     </h4>
                                     <p className="card-text">Judy works with yarn manufactures and companies to create elegant garments and designs.</p>
                                 </div>
@@ -41,7 +40,7 @@ const AboutPage = ({ data }) => {
                             <div className="card col-lg-5">
                                 <div className="card-body">
                                     <h4 className="text-center card-title">
-                                        <a href="contact/teaching" className="card-link text-decoration-none">Teaching</a>
+                                        <Link to="/contact" className="card-link text-decoration-none" state={{ subject: 'teaching' }}>Teaching</Link>
                                     </h4>
                                     <p className="card-text">Judy will create a single session or series of knit or crochet classes for presentation to individuals or groups. Examples of classes include: beginning knit or crochet, reading charts, lace, fair isle, colorwork, socks, etc.</p>
                                 </div>
@@ -50,7 +49,7 @@ const AboutPage = ({ data }) => {
                             <div className="card col-lg-5">
                                 <div className="card-body">
                                     <h4 className="text-center card-title">
-                                        <a href="contact/sample" className="card-link text-decoration-none">Sample Knit or Crochet</a>
+                                        <Link to="/contact" className="card-link text-decoration-none" state={{ subject: 'sample' }}>Sample Knit or Crochet</Link>
                                     </h4>
                                     <p className="card-text">Knit or crochet a sample of your design. Need an additional piece to send with a trunk show? Or an item test knit or crocheted before the pattern is release? Designers can hire Judy to knit or crochet a sample of your design.</p>
                                 </div>
@@ -59,7 +58,7 @@ const AboutPage = ({ data }) => {
                             <div className="card col-lg-5">
                                 <div className="card-body">
                                     <h4 className="text-center card-title">
-                                        <a href="contact/custom" className="card-link text-decoration-none">Custom Knit or Crochet</a>
+                                        <Link to="/contact" className="card-link text-decoration-none" state={{ subject: 'custom' }}>Custom Knit or Crochet</Link>
                                     </h4>
                                     <p className="card-text">Have a design you&apos;d like made, but don&apos;t have the time? Judy will work with you to determin yarn, labor costs and timelines.</p>
                                 </div>
@@ -68,7 +67,7 @@ const AboutPage = ({ data }) => {
                             <div className="card col-lg-5">
                                 <div className="card-body">
                                     <h4 className="text-center card-title">
-                                        <a href="contact/editing" className="card-link text-decoration-none">Tech and Copy Editing</a>
+                                        <Link to="/contact" className="card-link text-decoration-none" state={{ subject: 'editing' }}>Tech and Copy Editing</Link>
                                     </h4>
                                     <p className="card-text">Ensure your pattern is ready for publishing by having Judy as a second set of eyes to proofread, tech and copy edit, as well as checking the numbers to make sure they work.</p>
                                 </div>
@@ -77,7 +76,7 @@ const AboutPage = ({ data }) => {
                             <div className="card col-lg-5">
                                 <div className="card-body">
                                     <h4 className="text-center card-title">
-                                        <a href="contact/repair" className="card-link text-decoration-none">Repair Knit or Crocheted Items</a>
+                                        <Link to="/contact" className="card-link text-decoration-none" state={{ subject: 'repair' }}>Repair Knit or Crocheted Items</Link>
                                     </h4>
                                     <p className="card-text">Have an item that has a hole or is a bit worn out? Judy has the skills to repair it for you.</p>
                                 </div>

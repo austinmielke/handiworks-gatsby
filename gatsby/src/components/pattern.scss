@@ -1,0 +1,34 @@
+#pattern .breadcrumb {
+    background: none;
+}
+
+#pattern .breadcrumb .breadcrumb-item {
+    color: #B99057;
+    transition: all ease-in-out 0.3s;
+}
+
+#pattern .breadcrumb .breadcrumb-item:hover {
+    color: #4D3216;
+}
+
+#pattern .description {
+    margin-bottom: 2em;
+}
+
+#pattern .description h1 {
+    font-size: 2em;
+}
+
+#pattern .description .btn-primary {
+    background: #B99057;
+    border: none;
+    transition: all ease-in-out 0.3s;
+}
+
+#pattern .description .btn-primary:hover {
+    background: #4D3216;
+}
+
+#pattern .image {
+    margin-bottom: 2em;
+}

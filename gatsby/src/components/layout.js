@@ -20,7 +20,7 @@ const Layout = ({ children }) => {
   return (
     <div className="min-vh-100 d-flex flex-column justify-content-between">
       <Navbar siteTitle={data.site.siteMetadata?.title || 'Title'} />
-      <main>{children}</main>
+      <main className="flex-grow-1">{children}</main>
       <Footer />
     </div>
   )

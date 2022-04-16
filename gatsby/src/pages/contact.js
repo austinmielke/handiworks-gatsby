@@ -43,22 +43,22 @@ const ContactPage = ({ location }) => {
 
                         <div className="form-group mb-2">
                             <label htmlFor="name">Name:</label>
-                            <input type="text" name="name" id="name" className="form-control" />
+                            <input type="text" name="name" id="name" className="form-control" required />
                         </div>
 
                         <div className="form-group mb-2">
                             <label htmlFor="email">Email Address:</label>
-                            <input type="text" name="email" id="email" className="form-control" />
+                            <input type="text" name="email" id="email" className="form-control" required />
                         </div>
 
                         <div className="form-group mb-2">
                             <label htmlFor="subject">Subject:</label>
-                            <input type="text" name="subject" id="subject" className="form-control" defaultValue={getSubject(location.state.subject)} />
+                            <input type="text" name="subject" id="subject" className="form-control" defaultValue={getSubject(location.state.subject)} required />
                         </div>
 
                         <div className="form-group mb-2">
                             <label htmlFor="body">Message:</label>
-                            <textarea name="bodyMessage" id="bodyMessage" rows="5" className="form-control" />
+                            <textarea name="bodyMessage" id="bodyMessage" rows="5" className="form-control" required />
                         </div>
 
                         <button className="btn btn-success mt-2">Send Message</button>

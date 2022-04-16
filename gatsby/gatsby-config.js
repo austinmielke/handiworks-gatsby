@@ -5,8 +5,8 @@ require('dotenv').config({
 module.exports = {
   siteMetadata: {
     title: 'Handiworks Ltd.',
-    description: 'A simple bootstrap 5 and Sass starter for Gatsby. This barebones starter ships with the main Gatsby configuration files you might need.',
-    author: '@r-ichard'
+    description: 'Starting in 1984 Handiworks Ltd. began as a craft business doing antique reproduction needle arts. Ventures included various regional craft shows always focused on fiber arts in one form or another. Currently Handiworks focuses on knitting and crochet pattern designs.',
+    author: 'Austin Mielke'
   },
   plugins: [
     'gatsby-plugin-react-helmet',

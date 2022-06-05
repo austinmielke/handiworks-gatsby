@@ -7,29 +7,7 @@ import { FaRavelry as RavelryIcon } from 'react-icons/fa'
 import { AiFillFacebook as FacebookIcon } from 'react-icons/ai'
 import { BsTwitter as TwitterIcon, BsInstagram as InstagramIcon } from 'react-icons/bs'
 
-const ContactPage = ({ location }) => {
-  const getSubject = (stateSubject) => {
-    if (stateSubject !== null) {
-      switch (stateSubject) {
-        case 'design':
-          return 'Inquiry: Knit or Crochet Design'
-        case 'teaching':
-          return 'Inquiry: Teaching'
-        case 'sample':
-          return 'Inquiry: Sample Knit or Crochet'
-        case 'custom':
-          return 'Inquiry: Custom Knit or Crochet'
-        case 'editing':
-          return 'Inquiry: Tech and Copy Editing'
-        case 'repair':
-          return 'Inquiry: Repair Knit or Crocheted Items'
-        default:
-          return ''
-      }
-    } else {
-      return ''
-    }
-  }
+const ContactPage = () => {
   return (
     <Layout>
         <Seo title="Contact" />
@@ -53,7 +31,7 @@ const ContactPage = ({ location }) => {
 
                         <div className="form-group mb-2">
                             <label htmlFor="subject">Subject:</label>
-                            <input type="text" name="subject" id="subject" className="form-control" defaultValue={getSubject(location.state.subject)} required />
+                            <input type="text" name="subject" id="subject" className="form-control" required />
                         </div>
 
                         <div className="form-group mb-2">

@@ -37,12 +37,12 @@ module.exports = {
         token: process.env.SANITY_TOKEN
       }
     },
-    {
-      resolve: 'gatsby-plugin-purgecss',
-      options: {
-        printRejected: true // Print removed selectors and processed file names
-      }
-    },
+    // {
+    //   resolve: 'gatsby-plugin-purgecss',
+    //   options: {
+    //     printRejected: true // Print removed selectors and processed file names
+    //   }
+    // },
     {
       resolve: 'gatsby-plugin-manifest',
       options: {

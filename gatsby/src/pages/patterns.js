@@ -21,26 +21,24 @@ const PatternsList = ({ data }) => {
   )
 }
 
-export const query = graphql`
-    query {
-        patterns: allSanityPattern(sort: {fields: publishDate, order: DESC}) {
-            edges {
-                node {
-                    name
-                    publishDate
-                    slug {
-                        current
-                    }
-                    image {
-                        asset {
-                            gatsbyImageData(height: 200, placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
-                        }
-                    }
-                    _id
-                }
-            }
+export const query = graphql`{
+  patterns: allSanityPattern(sort: {publishDate: DESC}) {
+    edges {
+      node {
+        name
+        publishDate
+        slug {
+          current
         }
+        image {
+          asset {
+            gatsbyImageData(height: 200, placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
+          }
+        }
+        _id
+      }
     }
-`
+  }
+}`
 
 export default PatternsList
